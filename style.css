@@ -948,12 +948,14 @@ nav {
 @media (max-width: 768px) {
     .service-horizontal-card, .service-horizontal-card.reverse {
         grid-template-columns: 1fr !important;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
+        border-radius: 15px;
     }
-    .service-cat-image { min-height: 250px !important; }
-    .service-cat-content { padding: 2rem !important; }
-    .service-cat-content h2 { font-size: 2.2rem !important; }
-    .service-cat-content .subtitle { margin-bottom: 2rem !important; font-size: 0.9rem !important; }
-    .service-list-grid { gap: 1.5rem !important; }
-    .service-card-item h3 { font-size: 1.2rem !important; }
+    .service-cat-image { min-height: 150px !important; }
+    .service-cat-content { padding: 1.2rem !important; }
+    .service-cat-content h2 { font-size: 1.6rem !important; margin-bottom: 0.2rem; }
+    .service-cat-content .subtitle { margin-bottom: 1.2rem !important; font-size: 0.85rem !important; gap: 8px; }
+    .service-list-grid { gap: 0.8rem !important; }
+    .service-card-item h3 { font-size: 1.1rem !important; margin-bottom: 0.4rem; padding-left: 15px; }
+    .service-card-item p { font-size: 0.8rem !important; line-height: 1.4; }
 }
