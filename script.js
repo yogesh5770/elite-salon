@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollReveal();
     initEliteInteractivity();
     
+    // Launch Mobile Navigation Drawer
+    initMobileNav();
+    
     // Build and Launch Frontend Reviews API
     initFrontendReviews();
     
@@ -24,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// --- Dynamic Header ---
+// --- Navigation Drawer & Header ---
 function initHeader() {
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
@@ -34,6 +37,28 @@ function initHeader() {
             header.classList.remove('scrolled');
         }
     });
+}
+
+function initMobileNav() {
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+    const links = document.querySelectorAll('.nav-links a');
+
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active');
+            nav.classList.toggle('active');
+            document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : 'auto';
+        });
+
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                toggle.classList.remove('active');
+                nav.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+    }
 }
 
 // --- Cinematic Hero ---
