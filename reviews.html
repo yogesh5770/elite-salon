@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews & Contact | Elite Men and Kids Salon</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&family=Inter:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container nav-container">
+            <nav>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipMi-iM4CudVRqeRGngCnQkSYTP3GbAL0-Y5SkSf=s1360-w1360-h1020-rw"
+                        alt="Elite Logo"
+                        style="height: 50px; border-radius: 50%; border: 2.3px solid var(--primary-gold);">
+                    <a href="index.html" class="logo">ELITE<span>SALON</span></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="reviews.html" class="active" style="color: var(--primary-gold);">Reviews & Contact</a>
+                    </li>
+                </ul>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero" style="background-color: #050505; padding: 15rem 0 10rem; position: relative;">
+        <div class="container text-center" style="position: relative; z-index: 5;">
+            <div style="background: transparent; padding: 2rem; display: inline-block; max-width: 800px;">
+                <h1 style="font-size: clamp(3rem, 10vw, 5rem); color: var(--primary-gold); margin-bottom: 1rem;">ELITE
+                    REVIEWS</h1>
+                <p style="color: #fff; font-size: 1.25rem; letter-spacing: 2px; font-weight: 600;">AUTHENTIC EXPERIENCES
+                    FROM OUR COMMUNITY</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Wall -->
+    <section class="reviews-section reveal" style="padding-top: 5rem;">
+        <div class="container">
+            <div class="section-title">
+                <h2>VERIFIED GOOGLE REVIEWS</h2>
+                <hr style="width: 50px; margin: 2rem auto; border: 1px solid var(--primary-gold);">
+            </div>
+
+            <!-- The Frontend API Reviews Feed -->
+            <div id="dynamic-reviews-feed" class="galaxy-container">
+                <!-- Javascript will inject ALL verified reviews here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section id="contact" class="contact-section reveal" style="background: var(--bg-charcoal);">
+        <div class="container">
+            <div class="grid-2" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="contact-form-side">
+                    <div class="section-title" style="text-align: left;">
+                        <h2>VISIT THE SALON</h2>
+                        <p>Book your appointment or walk-in today for an elite experience.</p>
+                    </div>
+                    <div class="contact-info" style="margin: 2rem 0;">
+                        <p style="margin-bottom: 1rem;"><i class="fas fa-map-marker-alt"
+                                style="color: var(--primary-gold); width: 30px;"></i> PTR Backside, No. 6 Thirumalai
+                            Colony, 2nd St, Madurai</p>
+                        <p style="margin-bottom: 1rem;"><i class="fas fa-phone-alt"
+                                style="color: var(--primary-gold); width: 30px;"></i> 086819 21870</p>
+                        <p style="margin-bottom: 1rem;"><i class="fas fa-clock"
+                                style="color: var(--primary-gold); width: 30px;"></i> Open daily: 7:00 AM – 9:00 PM</p>
+                    </div>
+                </div>
+                <div class="map-side" style="text-align: center;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.1256740623!2d78.090333!3d9.923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cf6ff5555555%3A0x6a0c0a0a0a0a0a0a!2sElite%20Men%20and%20Kids%20Salon!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                        width="100%" height="300" style="border:0; border-radius: 20px;" allowfullscreen=""
+                        loading="lazy"></iframe>
+
+                    <!-- Dynamic Javascript Distance Output -->
+
+
+                    <!-- Instant App Connect Button -->
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=9.9229818,78.0929081" target="_blank"
+                        class="btn"
+                        style="margin-top: 1rem; display: inline-block; width: 100%; border-radius: 12px; background: rgba(212, 175, 55, 0.1); border: 1px solid var(--primary-gold); padding: 1rem; font-size: 1.1rem;">
+                        <i class="fas fa-location-arrow" style="margin-right: 10px;"></i> Open Map & Direct To Salon
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shared Footer -->
+    <footer>
+        <div class="container">
+            <a href="#" class="logo">ELITE<span>SALON</span></a>
+            <div class="social-links" style="margin-top: 2rem;">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p style="color: var(--text-muted);">&copy; 2026 Elite Men and Kids Salon Madurai. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
