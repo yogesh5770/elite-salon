@@ -605,25 +605,26 @@ nav {
 }
 
 @media (max-width: 768px) {
+    body { padding-top: 75px !important; }
     h1, h2, h3, .logo { letter-spacing: 0.5px !important; }
     .section-title h2 { font-size: 1.4rem !important; }
     .hero h1 { font-size: 1.8rem !important; line-height: 1.1; margin-bottom: 1rem; }
     .hero p { font-size: 0.8rem; margin-bottom: 1.2rem; line-height: 1.4; }
     .btn { padding: 0.7rem 1.2rem !important; width: 100%; text-align: center; font-size: 0.75rem; letter-spacing: 1px; border-radius: 10px; }
     
-    .hero-home { padding: 15rem 0 3rem; height: auto; display: block; border: none; }
+    .hero-home { padding: 4rem 0 3rem; height: auto !important; display: block; border: none; }
     .hero-home .hero-btns { flex-direction: column; gap: 0.6rem; width: 100%; overflow: hidden; }
     .btn::before { display: none !important; }
     
-    .page-hero { padding: 15rem 0 2rem; height: auto; display: block; }
+    .page-hero { padding: 4rem 0 2rem; height: auto !important; display: block; }
     .page-hero .hero-text-box { text-align: center; }
     .page-hero h1 { font-size: 1.6rem !important; margin-bottom: 0.5rem; }
     .page-hero p { font-size: 0.75rem; margin-bottom: 0; }
     
-    .logo { font-size: 0.85rem; gap: 4px; letter-spacing: 0 !important; font-weight: 900; }
-    .logo img { height: 30px !important; }
+    .logo { font-size: 0.8rem; gap: 4px; letter-spacing: 0 !important; font-weight: 900; }
+    .logo img { height: 28px !important; }
     
-    header { padding: 0.4rem 0 !important; background: rgba(8, 8, 8, 0.98) !important; backdrop-filter: blur(20px); }
+    header { height: 75px; padding: 0.4rem 0 !important; background: rgba(8, 8, 8, 0.99) !important; backdrop-filter: blur(20px); display: flex; align-items: center; }
 
     /* Premium Mobile Navigation Drawer 2.0 Recovery */
     .menu-toggle {
