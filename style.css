@@ -611,10 +611,10 @@ nav {
     .hero p { font-size: 0.8rem; margin-bottom: 1.2rem; line-height: 1.4; }
     .btn { padding: 0.7rem 1.2rem !important; width: 100%; text-align: center; font-size: 0.75rem; letter-spacing: 1px; border-radius: 10px; }
     
-    .hero-home { padding: 9rem 0 3rem; height: auto; }
-    .hero-home .hero-btns { flex-direction: column; gap: 0.4rem; width: 100%; }
+    .hero-home { padding: 12rem 0 3rem; height: auto; display: block; }
+    .hero-home .hero-btns { flex-direction: column; gap: 0.4rem; width: 100%; border-left: none; }
     
-    .page-hero { padding: 7rem 0 1.5rem; height: auto; }
+    .page-hero { padding: 12rem 0 2rem; height: auto; display: block; }
     .page-hero .hero-text-box { text-align: center; }
     .page-hero h1 { font-size: 1.6rem !important; margin-bottom: 0.5rem; }
     .page-hero p { font-size: 0.75rem; margin-bottom: 0; }
@@ -622,7 +622,7 @@ nav {
     .logo { font-size: 0.95rem; gap: 6px; letter-spacing: 0 !important; font-weight: 900; }
     .logo img { height: 35px !important; }
     
-    header { padding: 0.8rem 0 !important; background: rgba(8, 8, 8, 0.95) !important; backdrop-filter: blur(20px); }
+    header { padding: 0.4rem 0 !important; background: rgba(8, 8, 8, 0.98) !important; backdrop-filter: blur(20px); }
 
     /* Premium Mobile Navigation Drawer 2.0 Recovery */
     .menu-toggle {
